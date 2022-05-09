@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    background: linear-gradient(#4d6dae, #3243ae);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,7 +27,6 @@ body {
 }
 
 #background-wrap {
-  background: linear-gradient(#4d6dae, #3243ae);
   bottom: 0;
   left: 0;
   padding-top: 50px;
@@ -139,17 +139,6 @@ body {
     text-align: center !important;
 }
 
-.content {
-    width: 100%;
-    max-width: 655px;
-    padding: 40px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
-}
-
 .content h1 {
     font-weight: 600;
     font-size: 36px;
@@ -217,7 +206,24 @@ body {
 }
 
 @media only screen and (max-width: 654px) {
+    #background-wrap {
+        display: none;
+    }
+
     .content {
-        border-radius: 0;
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 655px) {
+    .content {
+        width: 100%;
+        max-width: 655px;
+        padding: 40px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
     }
 }
